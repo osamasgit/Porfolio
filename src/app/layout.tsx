@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Onest, Cutive_Mono } from "next/font/google";
+import "./ui/globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const onest = Onest({
+  variable: "--font-onest",
   subsets: ["latin"],
+  weight: ["400", "500", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const cutiveMono = Cutive_Mono({
+  variable: "--font-cutive-mono",
   subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -23,9 +25,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${onest.variable} ${cutiveMono.variable} antialiased`}
       >
         {children}
       </body>
