@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Onest, Cutive_Mono } from "next/font/google";
 import "./ui/globals.css";
+import Background from "./ui/background";
 
 const onest = Onest({
   variable: "--font-onest",
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${onest.variable} ${cutiveMono.variable} antialiased`}
       >
+      <Background />
         {children}
       </body>
     </html>
