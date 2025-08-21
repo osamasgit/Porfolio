@@ -8,8 +8,8 @@ interface NavbarProps {
 const Navbar = ({ name }: NavbarProps) => {
     return (
         <nav style={{ display: 'flex',justifyContent: 'center', alignItems: 'center', height: '80px' }}>
-            <div style={{borderRadius: '50px', width: '90%', height: '60px', color: '#41e3de', backgroundColor: '#000', border: 'solid 3px #41e3de', padding: '0 30px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '20px'}}>
-                <img src="/logo.png" alt="logo" style={{ height: '30px'}} />
+            <div style={{borderRadius: '50px', width: '90%', height: '60px', backgroundColor: '#41e3de', padding: '0 30px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '20px'}}>
+                <img src="/logo.png" alt="logo" style={{ height: '30px', filter: 'invert(100%)'}} />
                 <ul style={{ display: 'flex', gap: '20px', listStyle: 'none', margin: 0, padding: 0}}>
                     <li>PORYECTOS</li>
                     <li>FORMACIÓN</li>
@@ -17,9 +17,9 @@ const Navbar = ({ name }: NavbarProps) => {
                     <li>CONTACTO</li>
                 </ul>
                 <div style={{ display: 'flex', gap: '20px'}}>
-                    <img src="/linkedin.png" alt="linkedin" style={{height: '24px', filter: 'invert(100%)'}} />
-                    <img src="/github.png" alt="github" style={{height: '24px', filter: 'invert(100%)'}} />
-                    <button>Descargar CV</button>
+                    <img src="/linkedin.png" alt="linkedin" style={{height: '24px'}} />
+                    <img src="/github.png" alt="github" style={{height: '24px'}} />
+                    <button style={{display: 'flex', border: 'solid 1px #000', padding: '0 10px', borderRadius: '15px', background: '#e8a6a8'}}><img src="/assets/download_icon.svg" alt="descargar cv" />CV</button>
                 </div>
             </div>
         </nav>

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --foreground: #fff;
+  --foreground: #000;
   --font-onest: "Onest", sans-serif;
   --font-cutive: "Cutive Mono", monospace;
 }
