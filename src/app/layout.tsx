@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Onest, Cutive_Mono } from "next/font/google";
+import { Onest, Ubuntu_Mono } from "next/font/google";
 import "./ui/globals.css";
 import Background from "./ui/background";
 
@@ -9,8 +9,8 @@ const onest = Onest({
   weight: ["400", "500", "700"],
 });
 
-const cutiveMono = Cutive_Mono({
-  variable: "--font-cutive-mono",
+const ubuntuMono = Ubuntu_Mono({
+  variable: "--font-ubuntu-mono",
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${onest.variable} ${cutiveMono.variable} antialiased`}
+        className={`${onest.variable} ${ubuntuMono.variable} antialiased`}
       >
       <Background />
         {children}

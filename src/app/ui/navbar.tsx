@@ -1,11 +1,7 @@
 import React from 'react';
 import './globals.css';
 
-interface NavbarProps {
-    name: string;
-}
-
-const Navbar = ({ name }: NavbarProps) => {
+const Navbar = () => {
     return (
         <nav style={{ display: 'flex',justifyContent: 'center', alignItems: 'center', height: '80px' }}>
             <div style={{borderRadius: '50px', width: '90%', height: '60px', backgroundColor: '#41e3de', padding: '0 30px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '20px'}}>
